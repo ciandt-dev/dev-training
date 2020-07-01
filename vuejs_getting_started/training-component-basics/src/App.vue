@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <h1>{{ novotit }}</h1>
     <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/about">About</router-link>
@@ -7,7 +8,13 @@
     <router-view/>
   </div>
 </template>
-
+<script>
+export default {
+  data: () => ({
+    novotit: 'Novo Titulo'
+  })
+}
+</script>
 <style lang="scss">
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;

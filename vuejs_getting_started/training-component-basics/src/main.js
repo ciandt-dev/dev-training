@@ -6,8 +6,11 @@ import store from './store'
 
 Vue.config.productionTip = false
 
-new Vue({
+// eslint-disable-next-line no-unused-vars
+var appVue = new Vue({
   router,
   store,
   render: h => h(App)
 }).$mount('#app')
+
+window.appVue = appVue
